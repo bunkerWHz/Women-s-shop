@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
     <title>I am Woman</title>
 </head>
 <body>
     <section class="main-page">
-        <nav class="main-nav"><button class="hamburger"><span class="hamburger__line--top"></span><span class="hamburger__line--middle"></span><span class="hamburger__line--bottom"></span></button>
+        <nav class="main-nav"><button class="hamburger"><span class="hamburger__line hamburger__line--top"></span><span class="hamburger__line hamburger__line--middle"></span><span class="hamburger__line hamburger__line--bottom"></span></button>
         <div class="catalog">
             <h2 class="catalog__title">Каталог</h2>
             <button class="btn btn--close"><span class="btn__line--top"></span><span lclass="btn__line--bottom"></span></button>
@@ -50,15 +51,15 @@
         <header class="main-header">
             <a href="#" class="header__logo"></a>
             <ul class="header__menu-items">
-                <li class="header__menu-item"><a href="#" class="menu-item__link"></a></li>
-                <li class="header__menu-item"><a href="#" class="menu-item__link"></a></li>
-                <li class="header__menu-item"><a href="#" class="menu-item__link"></a></li>
+                <li class="header__menu-item"><a href="#" class="menu-item__link menu-item__link--search"></a></li>
+                <li class="header__menu-item"><a href="#" class="menu-item__link menu-item__link--lk"></a></li>
+                <li class="header__menu-item"><a href="#" class="menu-item__link menu-item__link--cart"></a></li>
             </ul>
         </header>
-        <div class="main-page__wrapper">
+        <div class="container">
             <div class="main-page__content">
-                    <p class="main-page__title">Новая<br class="line-divider--tablet"> круизная<br class="line-divider--mobile"> коллекция ‘19</p>
-                    <a href="#" class="catalog__link">Перейти в каталог</a>
+                    <p class="main-page__title">Новая<br class="line-divider--tablet">круизная<br class="line-divider--mobile">коллекция ‘19</p>
+                    <a href="#" class="link-to-catalog">Перейти в каталог</a>
                     <ul class="socials">
                         <li class="social"><a href="#" class="social__link social__link--fb">Facebook</a></li>
                         <li class="social"><a href="#" class="social__link social__link--yt" >Youtube</a></li>
@@ -68,9 +69,9 @@
           <div class="slider">
               <div class="slide">
                     <picture>
-                            <source media="(min-width:1440px)">
-                          <source media="(min-width:764px)">
-                          <img src="/img/" alt="product image" class="slide__img">
+                        <source srcset="/img/1440_main-page_sl-1.jpg" media="(min-width:1440px)">
+                        <source srcset="/img/764_main-page_sl-1.jpg" media="(min-width:764px)">
+                        <img src="/img/320_main-page_sl-1.jpg" alt="product image" class="slide__img">
                       </picture>
                       <div class="slide__desc">
                           <p class="desc__name">Хлопковое платье в полоску</p>
@@ -80,7 +81,7 @@
               <div class="slider__nav">
                   <button class="slider__btn slider__btn--left"></button><span class="slider__item slider__item--current">01/</span><span class="slider__item slider__item--all">3</span><button class="slider__btn slider__btn--right"></button>
               </div>
-              <a href="#" class="catalog__link">Смотреть все</a>
+              <a href="#" class="link-to-all">Смотреть все</a>
           </div>
         </div>
         <ul class="paginations">
@@ -91,6 +92,7 @@
             <li class="pagination"><a href="#" class="pagination__link">05</a></li>
         </ul>
     </section>
+
     <section class="new-models">
         <div class="container">
             <h2 class="new-models__title">Новое  поступление</h2>
