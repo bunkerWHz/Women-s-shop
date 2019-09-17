@@ -133,9 +133,9 @@
       margin-bottom: 37px; }
     .main-page__content {
       margin-left: 81px;
-      margin-top: -14px;
       width: 370px;
-      height: 300px; }
+      height: 300px;
+      top: calc(50% - 74px); }
     .main-page .line-divider--mobile {
       display: none; }
     .main-page .container {
@@ -223,12 +223,14 @@
           color: #0b0b0b; }
       .main-page .slider__btn {
         padding: 0;
+        box-sizing: border-box;
         background-image: url(/img/764_slider_btn.svg);
         background-color: transparent;
         background-repeat: no-repeat;
         border: none;
         background-position: 0 9px;
-        width: 13px;
+        width: 7px;
+        height: 100%;
         display: flex;
         margin-right: 3px; }
         .main-page .slider__btn--right {
@@ -245,7 +247,6 @@
           padding-top: 19px;
           position: absolute;
           display: flex;
-          align-items: center;
           flex-direction: column;
           width: 344px;
           height: 98px;
@@ -257,29 +258,30 @@
           color: #91161d;
           font-family: "Cormorant";
           font-size: 24px;
-          font-weight: 600; }
+          font-weight: 600;
+          padding-right: 33px;
+          align-items: flex-end; }
           .main-page .slider .slide__desc .desc__name {
             margin: 0;
             margin-bottom: 8px; }
           .main-page .slider .slide__desc .desc__price {
             font-size: 16px;
-            margin-right: 41px;
             margin-left: auto;
-            letter-spacing: 0.2px;
-            position: relative; }
+            position: relative;
+            margin-right: 9px; }
             .main-page .slider .slide__desc .desc__price:before {
               position: absolute;
               content: "";
               display: inline-block;
               top: 12px;
-              left: -89px;
-              width: 73px;
+              left: -90px;
+              width: 72px;
               height: 1px;
               background-color: #91171d; }
     .main-page .link-to-catalog {
       font-size: 16px;
       margin-left: 1px;
-      padding-bottom: 3px; }
+      padding-bottom: 4px; }
     .main-page .link-to-all {
       display: flex;
       margin-left: auto;
@@ -320,3 +322,187 @@
           font-size: 11px;
           font-weight: 400;
           letter-spacing: 0.5px; } }
+
+@media screen and (min-width: 1440px) {
+  .main-page {
+    background-image: url(/img/1440_main-page_bg-1.jpg);
+    height: 840px; }
+    .main-page__title {
+      font-size: 48px;
+      line-height: 59px;
+      margin-bottom: 34px;
+      position: relative; }
+      .main-page__title:after {
+        position: absolute;
+        display: inline-block;
+        content: "19";
+        top: 14px;
+        right: 34px;
+        width: 127px;
+        height: 120px;
+        opacity: 0.3;
+        color: #ece5e1;
+        font-family: "Cormorant";
+        font-size: 177px;
+        font-weight: 500;
+        z-index: -1; }
+    .main-page__content {
+      width: 500px;
+      margin-left: 130px;
+      top: calc(50% - 131px); }
+    .main-page .salelink {
+      font-size: 18px;
+      width: 145px;
+      left: -39px;
+      letter-spacing: 0.9px;
+      bottom: 220px; }
+      .main-page .salelink:before {
+        top: 13px;
+        left: -125px; }
+    .main-page .socials {
+      margin-top: -17px;
+      margin-left: 210px; }
+      .main-page .socials .social {
+        margin-right: 45px; }
+        .main-page .socials .social:not(:last-child):after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          width: 24px;
+          height: 1px;
+          background-color: #342b2b;
+          top: 10px;
+          right: -35px; }
+        .main-page .socials .social__link {
+          letter-spacing: 0;
+          font-size: 16px; }
+    .main-page .main-header {
+      padding-top: 35px;
+      padding-bottom: 25px;
+      min-width: 1300px;
+      box-sizing: border-box;
+      height: 80px; }
+      .main-page .main-header .header__logo {
+        width: 156px;
+        height: 34px;
+        background-image: url(/img/1440_main-page_logo.png);
+        margin-left: 204px; }
+      .main-page .main-header .header__menu-items {
+        padding-top: 0;
+        margin-right: 160px;
+        width: 291px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+      .main-page .main-header .header__menu-item {
+        margin-right: 0; }
+        .main-page .main-header .header__menu-item .menu-item__link--search {
+          width: 20px;
+          height: 20px;
+          background: transparent url(/img/1440_main-page_search-icon.png) no-repeat; }
+        .main-page .main-header .header__menu-item .menu-item__link--lk {
+          width: 17px;
+          height: 20px;
+          background: transparent url(/img/1440_main-page_lk-icon.png) no-repeat; }
+        .main-page .main-header .header__menu-item .menu-item__link--cart {
+          width: 17px;
+          height: 20px;
+          background: transparent url(/img/1440_main-page_cart-icon.png) no-repeat; }
+    .main-page .main-nav {
+      width: 75px;
+      height: 759px;
+      box-sizing: border-box; }
+      .main-page .main-nav .hamburger {
+        margin-left: 21px; }
+    .main-page .slider {
+      margin-top: 0;
+      margin-right: 160px;
+      width: 605px;
+      height: 680px; }
+      .main-page .slider__item {
+        font-size: 36px; }
+        .main-page .slider__item--all {
+          font-size: 24px;
+          margin-top: 27px; }
+      .main-page .slider__btn {
+        width: 10px;
+        background-image: url(/img/1440_slider_btn.svg);
+        background-position: 0 center;
+        margin-right: 24px; }
+        .main-page .slider__btn--right {
+          margin-right: 0;
+          margin-left: 18px;
+          background-position: 0 center; }
+      .main-page .slider__nav {
+        height: 50px;
+        width: 121px;
+        bottom: -62px;
+        right: calc(40% + 2px); }
+      .main-page .slider .slide {
+        width: 605px;
+        height: 680px; }
+        .main-page .slider .slide__desc {
+          align-items: flex-end;
+          padding-top: 22px;
+          padding-right: 45px;
+          width: 367px;
+          height: 104px;
+          right: 120px;
+          bottom: 76px; }
+        .main-page .slider .slide .desc__name {
+          font-size: 24px;
+          margin-bottom: 6px; }
+        .main-page .slider .slide .desc__price {
+          font-size: 18px;
+          margin-right: 0; }
+          .main-page .slider .slide .desc__price:before {
+            top: 14px;
+            left: -89px; }
+    .main-page .paginations {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      height: 310px;
+      list-style: none;
+      right: 42px;
+      top: 181px; }
+      .main-page .paginations .pagination {
+        margin-bottom: 31px; }
+        .main-page .paginations .pagination:last-child {
+          margin-bottom: 0; }
+        .main-page .paginations .pagination--active {
+          margin-bottom: 129px;
+          position: relative; }
+          .main-page .paginations .pagination--active:after {
+            position: absolute;
+            content: "";
+            bottom: -105px;
+            left: 9px;
+            display: inline-block;
+            height: 94px;
+            width: 1px;
+            background-color: #342b2b; }
+          .main-page .paginations .pagination--active .pagination__link {
+            color: #91171d;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 600; }
+        .main-page .paginations .pagination__link {
+          color: #342b2b;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-weight: 400;
+          text-decoration: none; }
+    .main-page .link-to-all {
+      margin-top: 0;
+      margin-right: 160px;
+      width: 108px;
+      color: #342b2b;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.9px; }
+    .main-page .link-to-catalog {
+      font-size: 18px; } }
