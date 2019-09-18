@@ -1,7 +1,10 @@
-
+* {
+    box-sizing: border-box;
+}
 
 
 @import "norm.scss";
 @import "main-page.scss";
 @import "new-models.scss";
 @import "about.scss";
+@import "blog.scss";

@@ -1,0 +1,99 @@
+.blog {
+    min-width: 320px;
+    padding: 0 15px;
+    text-align: center;
+    padding-bottom: 120px;
+    .link-to-blog {
+color: #79100b;
+font-family: "Cormorant";
+font-size: 14px;
+font-weight: 400;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    &__title {
+    color: #91171d;
+    font-family: "Cormorant";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    }
+    .slider {
+        width: 290px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 90px;
+        &__nav {
+            position: absolute;
+            bottom: -41px;
+            left: 53px;
+            display: flex;
+            flex-direction: row;
+            height: 30px;
+            .nav__item{  
+color: #342b2b;
+font-family: "Cormorant";
+font-size: 24px;
+font-weight: 400;
+&--all {
+    margin-top: 12px;
+    font-size: 16px;
+}
+            }
+        }
+        .slide {
+            width: 244px;
+            display: none;
+            justify-content: center;
+            &--active {
+                display: flex;
+                flex-direction: column;
+            }
+            &__title {
+                margin-top: 0;
+                margin-bottom: 8px;
+                word-spacing: 3px;
+                letter-spacing: -0.5px;
+                color: #342b2b;
+                font-family: "Cormorant";
+                font-size: 18px;
+                font-weight: 500;
+            }
+            &__desc {
+                line-height: 19.5px;
+                margin-top: 0;
+            }
+            &__link {
+                text-decoration: none;
+                color: #342b2b;
+                font-family: "Cormorant";
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.8px;
+                .tags {
+                    text-align-last: left;
+                    list-style: none;
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 12px;
+                    .tag {
+color: #342b2b;
+font-family: "Cormorant";
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+                        margin-right: 10px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

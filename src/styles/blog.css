@@ -1,0 +1,82 @@
+.blog {
+  min-width: 320px;
+  padding: 0 15px;
+  text-align: center;
+  padding-bottom: 120px; }
+  .blog .link-to-blog {
+    color: #79100b;
+    font-family: "Cormorant";
+    font-size: 14px;
+    font-weight: 400; }
+  .blog .container {
+    margin: 0 auto; }
+  .blog__title {
+    color: #91171d;
+    font-family: "Cormorant";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 6px; }
+  .blog .slider {
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 90px; }
+    .blog .slider__nav {
+      position: absolute;
+      bottom: -41px;
+      left: 53px;
+      display: flex;
+      flex-direction: row;
+      height: 30px; }
+      .blog .slider__nav .nav__item {
+        color: #342b2b;
+        font-family: "Cormorant";
+        font-size: 24px;
+        font-weight: 400; }
+        .blog .slider__nav .nav__item--all {
+          margin-top: 12px;
+          font-size: 16px; }
+    .blog .slider .slide {
+      width: 244px;
+      display: none;
+      justify-content: center; }
+      .blog .slider .slide--active {
+        display: flex;
+        flex-direction: column; }
+      .blog .slider .slide__title {
+        margin-top: 0;
+        margin-bottom: 8px;
+        word-spacing: 3px;
+        letter-spacing: -0.5px;
+        color: #342b2b;
+        font-family: "Cormorant";
+        font-size: 18px;
+        font-weight: 500; }
+      .blog .slider .slide__desc {
+        line-height: 19.5px;
+        margin-top: 0; }
+      .blog .slider .slide__link {
+        text-decoration: none;
+        color: #342b2b;
+        font-family: "Cormorant";
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.8px; }
+        .blog .slider .slide__link .tags {
+          text-align-last: left;
+          list-style: none;
+          display: block;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 12px; }
+          .blog .slider .slide__link .tags .tag {
+            color: #342b2b;
+            font-family: "Cormorant";
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.7px;
+            margin-right: 10px; }
+            .blog .slider .slide__link .tags .tag:last-child {
+              margin-right: 0; }
