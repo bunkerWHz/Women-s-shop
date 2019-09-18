@@ -897,7 +897,7 @@ button:-moz-focusring,
   min-width: 320px;
   padding: 0 15px;
   text-align: center;
-  padding-bottom: 148px; }
+  padding-bottom: 58px; }
   .blog .link-to-blog {
     color: #79100b;
     font-family: "Cormorant";
@@ -978,7 +978,7 @@ button:-moz-focusring,
 
 .subscription {
   min-width: 320px;
-  height: 437px; }
+  padding: 90px 0px; }
   .subscription__wrapper {
     background-image: url(/img/320_subscription_bg.jpg);
     background-repeat: no-repeat;
@@ -1044,3 +1044,6 @@ button:-moz-focusring,
       height: 36px;
       border-radius: 2px;
       background-color: #91171d; }
+
+.main-footer {
+  min-width: 320px; }

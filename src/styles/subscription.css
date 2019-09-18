@@ -1,6 +1,6 @@
 .subscription {
   min-width: 320px;
-  height: 437px; }
+  padding: 90px 0px; }
   .subscription__wrapper {
     background-image: url(/img/320_subscription_bg.jpg);
     background-repeat: no-repeat;
