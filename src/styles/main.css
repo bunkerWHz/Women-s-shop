@@ -998,7 +998,7 @@ template {
   min-width: 320px;
   padding: 0 15px;
   text-align: center;
-  padding-bottom: 120px; }
+  padding-bottom: 148px; }
   .blog .link-to-blog {
     color: #79100b;
     font-family: "Cormorant";
@@ -1076,3 +1076,72 @@ template {
             margin-right: 10px; }
             .blog .slider .slide__link .tags .tag:last-child {
               margin-right: 0; }
+
+.subscription {
+  min-width: 320px;
+  height: 437px; }
+  .subscription__wrapper {
+    background-image: url(/img/320_subscription_bg.jpg);
+    background-repeat: no-repeat;
+    padding: 24px 17px;
+    height: 437px; }
+  .subscription .container {
+    width: 320px;
+    margin: 0 auto; }
+  .subscription .form {
+    display: flex;
+    padding: 66px 55px 0px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 285px;
+    height: 389px;
+    background-color: #ece5e1;
+    opacity: 0.9; }
+    .subscription .form__title {
+      margin-top: 0;
+      text-align: center;
+      line-height: 22px;
+      color: #91171d;
+      font-family: "Cormorant";
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 30px; }
+    .subscription .form__email {
+      border: none;
+      background-color: transparent;
+      text-align: center;
+      color: #342b2b;
+      width: 100%;
+      font-family: "Cormorant";
+      font-size: 14px;
+      padding: 0;
+      font-weight: 300;
+      letter-spacing: 0.68px;
+      margin-bottom: 41px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #342b2b; }
+    .subscription .form__law {
+      margin-top: 9px;
+      margin-left: 3px;
+      text-align: center;
+      width: 238px;
+      height: 23px;
+      opacity: 0.7;
+      color: #342b2b;
+      font-family: "Open Sans";
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+    .subscription .form .btn--submit {
+      display: inline-block;
+      width: 156px;
+      border: none;
+      padding: 0;
+      color: #ffffff;
+      font-family: "Cormorant";
+      font-size: 16px;
+      font-weight: 400;
+      height: 36px;
+      border-radius: 2px;
+      background-color: #91171d; }
