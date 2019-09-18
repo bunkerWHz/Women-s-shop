@@ -1,0 +1,53 @@
+.about {
+  min-width: 320px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  padding-bottom: 50px; }
+  .about .paginations {
+    display: none; }
+  .about .container {
+    margin: 0 auto;
+    text-align: center; }
+  .about__title {
+    color: #91171d;
+    font-family: "Cormorant - Semi Bold";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin-bottom: 41px; }
+  .about__photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 290px;
+    height: 458px; }
+    .about__photos .photo__img--right {
+      display: none; }
+    .about__photos .photo__desc {
+      color: #342b2b;
+      font-family: "Cormorant";
+      font-size: 16px;
+      font-weight: 300;
+      display: none; }
+      .about__photos .photo__desc--right {
+        display: inline-block;
+        text-align: center;
+        width: 290px;
+        padding: 0 15px;
+        height: 201px;
+        line-height: 19px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0; }
+      .about__photos .photo__desc--left {
+        display: inline-block;
+        text-align: center;
+        width: 290px;
+        padding: 0 15px;
+        height: 458px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0; }
+        .about__photos .photo__desc--left .desc__content {
+          margin-top: 24px; }
