@@ -1,4 +1,97 @@
 .main-footer {
     min-width: 320px;
-    
+    padding: 0 15px;
+    background-color: #ece5e1;
+    padding-top: 30px;
+    height: 240px;
+    .container {
+        margin: 0 auto;
+    }
+    &__catalog {
+    display: none;
+}
+&__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .copyrights {
+display: block;
+width: 100%;
+color: #342b2b;
+font-family: "Cormorant";
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+margin-top: 36px;
+text-align: right;
+    }
+    .info__links {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        .info__link {
+            margin-bottom: 16px;
+            &--desktop {
+                display: none;
+            }
+            &--tablet {
+                display: none;
+            }
+            .link__phone {
+text-decoration: none;
+color: #342b2b;
+font-family: "Cormorant";
+font-size: 16px;
+font-weight: 600;
+            }
+            .socials {
+                padding: 0;
+                margin: 0;
+                display: inline-block;
+                list-style: none;
+                .social {
+                    margin-bottom: 13px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .social__link {
+                                                text-decoration: none;
+                        opacity: 0.8;
+                        color: #342b2b;
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        font-weight: 400;
+                                            }
+                }
+            }
+        }
+    }
+    .info__ways {
+        display: flex;
+        width: 139px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        letter-spacing: 0.1px;
+        margin-top: 5px;
+        .info__way {
+            margin-bottom: 12px;
+            color: #342b2b;
+            font-family: "Cormorant";
+            font-size: 16px;
+            font-weight: 600;
+            &--desktop {
+                display: none;
+            }
+            &--tablet {
+                display: none;
+            }
+        }
+       
+    }
+}
+
 }
