@@ -1,0 +1,151 @@
+.new-models {
+    padding: 0 15px;
+    min-width: 320px;
+    padding-top: 68px;
+    padding-bottom: 45px;
+    box-sizing: border-box;
+   
+    &__title{
+        margin: 0;
+        text-align: center;
+color: #91171d;
+font-family: "Cormorant";
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 30px;
+    }
+
+    &__items{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        margin-bottom: 14px;
+        .new-models__item {
+            margin-right: 21px;
+            &--active{
+                margin-top: 1px;
+                .item__link {
+                    border-bottom: 1px solid  #342b2b;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            
+            .item__link {
+                color: #342b2b;
+                font-family: "Cormorant";
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+    .container {
+        margin: 0 auto;
+    }
+
+    .slider {
+        position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+        margin-bottom: 39px;
+        width: 290px;
+        &__btn {
+            position: absolute;
+            border: none;
+            padding: 0;
+            display: inline-block;
+            width: 16px;
+            height: 29px;
+            background-image: url(/img/320_new-models_slider_btn.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-color: transparent;
+            top: calc(39% + 5px);
+            left: -3px;
+            &--right {
+                left: calc( 96% - 1px);
+                transform: rotate(180deg);
+            }
+        }
+        .slide {
+            width: 244px;
+            display: none;
+            &--active {
+                display: inline-block;
+            }
+            &__link {
+                display: inline-block;
+                text-decoration: none;
+                position: relative;
+                .like-btn {
+                    position: absolute;
+                    width: 19px;
+                    height: 17px;
+                    background-image: url(/img/320_like_btn.png);
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    padding: 0;
+                    border: none;
+                    top: 10px;
+                    right: 10px;
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+            &__desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                .desc__name {
+                    color: #342b2b;
+                    font-family: "Cormoran";
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: -0.4px;
+                    margin-bottom: 1px;
+                }
+                .desc__price {
+                    color: #342b2b;
+                    font-family: "Cormorant";
+                    font-size: 14px;
+                    font-weight: 500;
+                    position: relative;
+                    margin-right: 73px;
+                    margin-left: auto;
+                    &:after {
+                        position: absolute;
+                        width: 30px;
+                        display: inline-block;
+                        content: "";
+                        height: 1px;
+                        background-color: #342b2b;
+                        top: 10px;
+                        left: -40px;
+                    }
+                }
+            }
+        }
+    }
+    .catalog__link {
+        display: flex;
+        justify-content: center;
+        color: #342b2b;
+        font-family: "Cormorant";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.7px;
+    }
+    .paginations {
+        display: none;
+    }
+}
