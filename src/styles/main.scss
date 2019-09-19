@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+picture {
+    display: block;
+}
 
 @import "norm.scss";
 @import "main-page.scss";
