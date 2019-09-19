@@ -592,7 +592,7 @@ template {
     .main-page .link-to-catalog {
       font-size: 16px;
       margin-left: 1px;
-      padding-bottom: 4px; }
+      padding-bottom: 3px; }
     .main-page .link-to-all {
       display: flex;
       margin-left: auto;
@@ -974,7 +974,8 @@ template {
           .new-models .slider .slide__desc .desc__name {
             font-size: 24px;
             text-align: center;
-            margin-bottom: 4px; }
+            margin-bottom: 4px;
+            margin-top: 5px; }
           .new-models .slider .slide__desc .desc__price {
             font-size: 16px;
             margin-right: 43px; }
