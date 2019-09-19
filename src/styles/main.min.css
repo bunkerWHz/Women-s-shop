@@ -873,7 +873,8 @@ button:-moz-focusring,
           .new-models .slider .slide__desc .desc__name {
             font-size: 24px;
             text-align: center;
-            margin-bottom: 4px; }
+            margin-bottom: 4px;
+            margin-top: 5px; }
           .new-models .slider .slide__desc .desc__price {
             font-size: 16px;
             margin-right: 43px; }
@@ -945,6 +946,7 @@ button:-moz-focusring,
     .about .container {
       height: 100%; }
     .about__title {
+      margin-left: 31px;
       font-size: 36px;
       margin-bottom: 60px; }
     .about__photos {

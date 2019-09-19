@@ -61,6 +61,7 @@
     .about .container {
       height: 100%; }
     .about__title {
+      margin-left: 31px;
       font-size: 36px;
       margin-bottom: 60px; }
     .about__photos {

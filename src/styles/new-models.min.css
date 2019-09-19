@@ -154,7 +154,8 @@
           .new-models .slider .slide__desc .desc__name {
             font-size: 24px;
             text-align: center;
-            margin-bottom: 4px; }
+            margin-bottom: 4px;
+            margin-top: 5px; }
           .new-models .slider .slide__desc .desc__price {
             font-size: 16px;
             margin-right: 43px; }
