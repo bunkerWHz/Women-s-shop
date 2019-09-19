@@ -133,7 +133,9 @@
       height: 100%; }
     .new-models__title {
       font-size: 36px;
-      margin-bottom: 18px; }
+      margin-bottom: 18px;
+      word-spacing: 10px;
+      letter-spacing: -0.2px; }
     .new-models .new-models__items {
       margin-bottom: 40px; }
     .new-models .new-models__item {

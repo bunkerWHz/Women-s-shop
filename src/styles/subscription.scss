@@ -74,3 +74,44 @@ font-weight: 400;
         }
     }
 }
+
+@media screen and (min-width: 764px) {
+    .subscription {
+        padding: 100px 20px 142px;
+        .container {
+            width: 100%;
+        }
+        &__wrapper {
+            width: 724px;
+            height: 437px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/img/764_subscription_bg.jpg);
+            .form {
+                padding: 0;
+                padding-top: 62px;
+                margin-bottom: -1px;
+                width: 556px;
+                height: 336px;
+                &__law {
+                    font-size: 11px;
+                    width: 270px;
+                    letter-spacing: 0.6px;
+                }
+                &__email {
+                    width: 180px;
+                    padding-bottom: 2px;
+                    margin-bottom: 31px;
+                }
+                &__title {
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+
+    }
+
+}

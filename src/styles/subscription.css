@@ -66,3 +66,34 @@
       height: 36px;
       border-radius: 2px;
       background-color: #91171d; }
+
+@media screen and (min-width: 764px) {
+  .subscription {
+    padding: 100px 20px 142px; }
+    .subscription .container {
+      width: 100%; }
+    .subscription__wrapper {
+      width: 724px;
+      height: 437px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/img/764_subscription_bg.jpg); }
+      .subscription__wrapper .form {
+        padding: 0;
+        padding-top: 62px;
+        margin-bottom: -1px;
+        width: 556px;
+        height: 336px; }
+        .subscription__wrapper .form__law {
+          font-size: 11px;
+          width: 270px;
+          letter-spacing: 0.6px; }
+        .subscription__wrapper .form__email {
+          width: 180px;
+          padding-bottom: 2px;
+          margin-bottom: 31px; }
+        .subscription__wrapper .form__title {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 28px; } }
