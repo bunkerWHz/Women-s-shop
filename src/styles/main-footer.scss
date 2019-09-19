@@ -4,94 +4,232 @@
     background-color: #ece5e1;
     padding-top: 30px;
     height: 240px;
+
     .container {
         margin: 0 auto;
     }
+
     &__catalog {
-    display: none;
-}
-&__info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    .copyrights {
-        display: block;
-        width: 100%;
-        color: #342b2b;
-        font-family: "Cormorant";
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin-top: 36px;
-        text-align: right;
+        display: none;
     }
-    .info__links {
+
+    &__info {
         display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        .info__link {
-            margin-bottom: 16px;
-            &--desktop {
-                display: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .copyrights {
+            display: block;
+            width: 100%;
+            color: #342b2b;
+            font-family: "Cormorant";
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 36px;
+            text-align: right;
+        }
+
+        .info__links {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            .info__link {
+                margin-bottom: 16px;
+
+                &--desktop {
+                    display: none;
+                }
+
+                &--tablet {
+                    display: none;
+                }
+
+                .link__phone {
+                    text-decoration: none;
+                    color: #342b2b;
+                    font-family: "Cormorant";
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .socials {
+                    padding: 0;
+                    margin: 0;
+                    display: inline-block;
+                    list-style: none;
+
+                    .social {
+                        margin-bottom: 13px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .social__link {
+                            text-decoration: none;
+                            opacity: 0.8;
+                            color: #342b2b;
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
             }
-            &--tablet {
-                display: none;
-            }
-            .link__phone {
-                text-decoration: none;
+        }
+
+        .info__ways {
+            display: flex;
+            width: 139px;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            letter-spacing: 0.1px;
+            margin-top: 5px;
+
+            .info__way {
+                margin-bottom: 12px;
                 color: #342b2b;
                 font-family: "Cormorant";
                 font-size: 16px;
                 font-weight: 600;
+
+                &--desktop {
+                    display: none;
+                }
+
+                &--tablet {
+                    display: none;
+                }
             }
-            .socials {
-                padding: 0;
-                margin: 0;
+
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 764px) {
+    .main-footer {
+        padding: 0 19px;
+        padding-top: 35px;
+        height: 302px;
+
+        &__info {
+            height: 100%;
+            .copyrights{
+                font-size: 14px;
+                margin-top: 21px;
+                position: relative;
+                &:before {
+                position: absolute;
+                width: 12px;
+                height: 12px;
                 display: inline-block;
-                list-style: none;
-                .social {
-                    margin-bottom: 13px;
-                    &:last-child {
-                        margin-bottom: 0;
+                background: transparent url(/img/764_main-footer_icon-copyright.png) no-repeat;
+                top: 3px;
+                right: 152px;
+                content:"";
+                }
+                }
+            .info__links {
+                width: 300px;
+
+                .info__link {
+                    &--tablet {
+                        display: list-item;
+
+                        .card__desc {
+                            margin: 0;
+                            color: #342b2b;
+                            font-size: 12px;
+                            font-family: "Cormorant";
+                            font-weight: 600;
+                            margin-top: 5px;
+
+                            .card__payments {
+                                font-family: "Cormorant";
+                                font-weight: 700;
+                                color: #342b2b;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .card__types {
+                            display: flex;
+                            flex-direction: row;
+                            padding: 0;
+                            margin: 0;
+                            margin-top: 2px;
+
+                            .card__type {
+                                &:nth-child(even) {
+                                    margin-right: 10px;
+                                    margin-left: 12px;
+                                }
+
+                                height: 36px;
+                                display: inline-block;
+
+                                &--visa {
+                                    background: transparent url(/img/764_main-footer_icon-visa.png) no-repeat;
+                                    width: 36px;
+                                }
+
+                                &--master {
+                                    background: transparent url(/img/764_main-footer_icon-mastercard.png) no-repeat;
+                                    width: 57px;
+                                }
+
+                                &--pp {
+                                    background: transparent url(/img/764_main-footer_icon-paypal.png) no-repeat;
+                                    width: 36px;
+                                }
+
+                            }
+                        }
                     }
-                    .social__link {
-                                                text-decoration: none;
-                        opacity: 0.8;
-                        color: #342b2b;
-                        font-family: "Open Sans";
-                        font-size: 14px;
-                        font-weight: 400;
-                                            }
+
+                    .socials {
+                        display: flex;
+                        flex-direction: row;
+
+                        .social {
+                            margin: 0;
+
+                            &:nth-child(even) {
+                                margin-left: 27px;
+                                margin-right: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info__ways {
+                width: 150px;
+                margin-top: 4px;
+                margin-right: 57px;
+
+                .info__way {
+                    margin-bottom: 14px;
+                }
+
+                .info__way--mobile {
+                    display: none;
+                }
+
+                .info__way--tablet {
+                    display: flex;
                 }
             }
         }
-    }
-    .info__ways {
-        display: flex;
-        width: 139px;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        letter-spacing: 0.1px;
-        margin-top: 5px;
-        .info__way {
-            margin-bottom: 12px;
-            color: #342b2b;
-            font-family: "Cormorant";
-            font-size: 16px;
-            font-weight: 600;
-            &--desktop {
-                display: none;
-            }
-            &--tablet {
-                display: none;
-            }
-        }
-       
-    }
-}
 
+
+    }
 }

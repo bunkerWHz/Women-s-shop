@@ -87,7 +87,8 @@
         height: 336px; }
         .subscription__wrapper .form__law {
           font-size: 11px;
-          width: 270px; }
+          width: 270px;
+          letter-spacing: 0.6px; }
         .subscription__wrapper .form__email {
           width: 180px;
           padding-bottom: 2px;

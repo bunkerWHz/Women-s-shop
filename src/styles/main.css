@@ -1391,3 +1391,79 @@ template {
           display: none; }
         .main-footer__info .info__ways .info__way--tablet {
           display: none; }
+
+@media screen and (min-width: 764px) {
+  .main-footer {
+    padding: 0 19px;
+    padding-top: 35px;
+    height: 302px; }
+    .main-footer__info {
+      height: 100%; }
+      .main-footer__info .copyrights {
+        font-size: 14px;
+        margin-top: 21px;
+        position: relative; }
+        .main-footer__info .copyrights:before {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          background: transparent url(/img/764_main-footer_icon-copyright.png) no-repeat;
+          top: 3px;
+          right: 152px;
+          content: ""; }
+      .main-footer__info .info__links {
+        width: 300px; }
+        .main-footer__info .info__links .info__link--tablet {
+          display: list-item; }
+          .main-footer__info .info__links .info__link--tablet .card__desc {
+            margin: 0;
+            color: #342b2b;
+            font-size: 12px;
+            font-family: "Cormorant";
+            font-weight: 600;
+            margin-top: 5px; }
+            .main-footer__info .info__links .info__link--tablet .card__desc .card__payments {
+              font-family: "Cormorant";
+              font-weight: 700;
+              color: #342b2b;
+              font-size: 12px; }
+          .main-footer__info .info__links .info__link--tablet .card__types {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            margin-top: 2px; }
+            .main-footer__info .info__links .info__link--tablet .card__types .card__type {
+              height: 36px;
+              display: inline-block; }
+              .main-footer__info .info__links .info__link--tablet .card__types .card__type:nth-child(even) {
+                margin-right: 10px;
+                margin-left: 12px; }
+              .main-footer__info .info__links .info__link--tablet .card__types .card__type--visa {
+                background: transparent url(/img/764_main-footer_icon-visa.png) no-repeat;
+                width: 36px; }
+              .main-footer__info .info__links .info__link--tablet .card__types .card__type--master {
+                background: transparent url(/img/764_main-footer_icon-mastercard.png) no-repeat;
+                width: 57px; }
+              .main-footer__info .info__links .info__link--tablet .card__types .card__type--pp {
+                background: transparent url(/img/764_main-footer_icon-paypal.png) no-repeat;
+                width: 36px; }
+        .main-footer__info .info__links .info__link .socials {
+          display: flex;
+          flex-direction: row; }
+          .main-footer__info .info__links .info__link .socials .social {
+            margin: 0; }
+            .main-footer__info .info__links .info__link .socials .social:nth-child(even) {
+              margin-left: 27px;
+              margin-right: 21px; }
+      .main-footer__info .info__ways {
+        width: 150px;
+        margin-top: 4px;
+        margin-right: 57px; }
+        .main-footer__info .info__ways .info__way {
+          margin-bottom: 14px; }
+        .main-footer__info .info__ways .info__way--mobile {
+          display: none; }
+        .main-footer__info .info__ways .info__way--tablet {
+          display: flex; } }
