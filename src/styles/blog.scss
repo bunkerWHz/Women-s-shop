@@ -8,6 +8,9 @@ color: #79100b;
 font-family: "Cormorant";
 font-size: 14px;
 font-weight: 400;
+text-decoration: none;
+border-bottom: 1px solid #79100b;
+padding-bottom: 4px;
     }
     .container {
         margin: 0 auto;
@@ -96,4 +99,49 @@ letter-spacing: 0.7px;
             }
         }
     }
+}
+
+@media screen and (min-width: 764px) {
+.blog {
+    padding: 0 27px;
+    padding-bottom: 10px;
+    position: relative;
+    &__title {
+        font-size: 48px;
+        margin-top: 8px;
+        margin-bottom: 45px;
+    }
+    .slider {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 49px;
+        &__nav {
+            display: inline-block;
+            left: unset;
+            bottom: unset;
+            position: absolute;
+            right: 133px;
+            top: -96px;
+        }
+        .slide {
+            width: 345px;
+            &__title {
+                font-size: 24px;
+                margin-top: 4px;
+                margin-bottom: 6px;
+            }
+            &__desc {
+                padding: 0 12px;
+                font-size: 16px;
+            }
+            .tag {
+                font-size: 16px;
+            }
+        }
+
+    }
+
+
+}
+
 }
