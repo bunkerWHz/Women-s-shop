@@ -816,7 +816,8 @@ template {
       font-weight: 300;
       letter-spacing: 0.9px; }
     .main-page .link-to-catalog {
-      font-size: 18px; } }
+      font-size: 18px;
+      padding-bottom: 4px; } }
 
 .new-models {
   padding: 0 15px;
@@ -987,6 +988,86 @@ template {
               left: -59px; }
         .new-models .slider .slide .catalog__link {
           font-size: 14px; } }
+
+@media screen and (min-width: 1440px) {
+  .new-models {
+    padding: 0 166px;
+    height: auto;
+    position: relative;
+    padding-top: 156px;
+    padding-bottom: 130px; }
+    .new-models__title {
+      font-size: 48px;
+      margin-left: 29px;
+      margin-bottom: 20px; }
+    .new-models .new-models__items {
+      margin-bottom: 62px;
+      padding-left: 34px; }
+    .new-models .new-models__item {
+      margin-right: 50px; }
+      .new-models .new-models__item:nth-child(even) {
+        margin-right: 35px; }
+      .new-models .new-models__item .item__link {
+        font-size: 18px; }
+    .new-models .slider {
+      margin-bottom: 60px; }
+      .new-models .slider .slide {
+        width: 349px;
+        height: 600px; }
+        .new-models .slider .slide__link .like-btn {
+          width: 26px;
+          height: 23px;
+          background-image: url(/img/1440_like-btn.png);
+          top: 20px;
+          right: 20px; }
+        .new-models .slider .slide__desc .desc__name {
+          font-size: 30px;
+          margin-top: 20px; }
+        .new-models .slider .slide__desc .desc__price {
+          font-size: 20px; }
+          .new-models .slider .slide__desc .desc__price:after {
+            width: 72px;
+            left: -90px; }
+    .new-models .paginations {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      height: 310px;
+      list-style: none;
+      right: 56px;
+      top: calc(33% - 8px); }
+      .new-models .paginations .pagination {
+        margin-bottom: 31px; }
+        .new-models .paginations .pagination:last-child {
+          margin-bottom: 0; }
+        .new-models .paginations .pagination--active {
+          margin-bottom: 129px;
+          position: relative; }
+          .new-models .paginations .pagination--active:after {
+            position: absolute;
+            content: "";
+            bottom: -105px;
+            left: 9px;
+            display: inline-block;
+            height: 94px;
+            width: 1px;
+            background-color: #342b2b; }
+          .new-models .paginations .pagination--active .pagination__link {
+            color: #91171d;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 600; }
+        .new-models .paginations .pagination__link {
+          color: #342b2b;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-weight: 400;
+          text-decoration: none; }
+    .new-models .catalog__link {
+      font-size: 18px; } }
 
 .about {
   min-width: 320px;
