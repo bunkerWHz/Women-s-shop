@@ -233,3 +233,164 @@
 
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        height: 521px;
+        padding: 0;
+            &__catalog{
+                padding-top: 60px;
+                padding-left: 130px;
+
+                padding-right: 40px;
+                background-color: #decec5;
+                display: flex;
+                width: 773px;
+                justify-content: space-between;
+                .catalog__items {
+                    padding: 0;
+                    width: 150px;
+                    margin: 0;
+                    list-style: none;
+                    margin-right: 66px;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .catalog__item {
+                        .item__link {
+                            text-decoration: none;
+                            color: #342b2b;
+                            font-family: "Cormorant";
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .brends__items {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: -4px;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    min-height: 200px;
+                    width: 150px;
+                    margin-right: 87px;
+                    .brends__item {
+                        margin-bottom: 25px;
+                        .item__link {
+                            text-decoration: none;
+                            color: #342b2b;
+                            font-family: "Cormorant";
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .sales__items {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 46px;
+                width: 150px;
+                    justify-content: flex-start;
+                    .sales__item {
+                        margin-bottom: 22px;
+                        .item__link {
+                            text-decoration: none;
+                            color: #342b2b;
+                            font-family: "Cormorant";
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            &__info {
+                min-width: unset;
+                padding-top: 56px;
+                padding-left: 55px;
+                .info__links {
+                    .info__link {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                        .card__desc {
+                            font-size: 14px;
+                            margin-top: -17px;
+                            margin-left: -3px;
+                            .card__payments {
+                                font-size: 14px;
+                            }
+                        }
+                       .main-footer__email {
+                        width: 193px;
+                                     color: #342b2b;
+                            font-family: "Cormorant";
+                            font-size: 14px;
+                            font-weight: 300;
+                            letter-spacing: 0.68px;
+                            background-color: transparent;
+                            padding: 0;
+                            border: none;
+                            padding-bottom: 4px;
+                            border-bottom: 1px solid #342b2b;
+                        }
+                        .card__types {
+                            margin-left: -3px;
+                            margin-top: 3px;
+                            .card__type {
+                                &:nth-child(even) {
+                                    margin-right: 19px;
+                                    margin-left: 17px;
+                                }
+                                &--visa {
+                                    width: 45px;
+                                    height: 45px;
+                                    background-image: url(/img/1440_main-footer_icon-visa.png);
+                                }
+                                &--master {
+                                    width: 71px;
+                                    height: 45px;
+                                    background-image: url(/img/1440_main-footer_icon-master.png);
+
+                                }
+                                &--pp {
+                                    width: 45px;
+                                    height: 45px;
+                                    background-image: url(/img/1440_main-footer_icon-pp.png);
+
+                                }
+                            }
+                        }
+                        &--desktop {
+                            display: list-item;
+                        }
+                    }
+                }
+                .info__ways {
+                    width: 180px;
+                    margin-right: 32px;
+                    .info__way {
+                        margin-bottom: 35px;
+                        font-size: 18px;
+                        &--desktop {
+                            display: list-item;
+                        }
+                    }
+                }
+            }
+            .copyrights {
+                margin-top: 49px;
+                padding-right: 127px;
+                &:before {
+                    right: 278px;
+                }
+            }
+}
+}

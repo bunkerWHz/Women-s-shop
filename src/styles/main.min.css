@@ -1587,3 +1587,128 @@ button:-moz-focusring,
           display: none; }
         .main-footer__info .info__ways .info__way--tablet {
           display: flex; } }
+
+@media screen and (min-width: 1440px) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    height: 521px;
+    padding: 0; }
+    .main-footer__catalog {
+      padding-top: 60px;
+      padding-left: 130px;
+      padding-right: 40px;
+      background-color: #decec5;
+      display: flex;
+      width: 773px;
+      justify-content: space-between; }
+      .main-footer__catalog .catalog__items {
+        padding: 0;
+        width: 150px;
+        margin: 0;
+        list-style: none;
+        margin-right: 66px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .main-footer__catalog .catalog__items .catalog__item .item__link {
+          text-decoration: none;
+          color: #342b2b;
+          font-family: "Cormorant";
+          font-size: 18px;
+          font-weight: 400; }
+      .main-footer__catalog .brends__items {
+        padding: 0;
+        margin: 0;
+        margin-top: -4px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 200px;
+        width: 150px;
+        margin-right: 87px; }
+        .main-footer__catalog .brends__items .brends__item {
+          margin-bottom: 25px; }
+          .main-footer__catalog .brends__items .brends__item .item__link {
+            text-decoration: none;
+            color: #342b2b;
+            font-family: "Cormorant";
+            font-size: 18px;
+            font-weight: 400; }
+      .main-footer__catalog .sales__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 46px;
+        width: 150px;
+        justify-content: flex-start; }
+        .main-footer__catalog .sales__items .sales__item {
+          margin-bottom: 22px; }
+          .main-footer__catalog .sales__items .sales__item .item__link {
+            text-decoration: none;
+            color: #342b2b;
+            font-family: "Cormorant";
+            font-size: 18px;
+            font-weight: 400; }
+    .main-footer__info {
+      min-width: unset;
+      padding-top: 56px;
+      padding-left: 55px; }
+      .main-footer__info .info__links .info__link {
+        font-size: 18px;
+        margin-bottom: 30px; }
+        .main-footer__info .info__links .info__link .card__desc {
+          font-size: 14px;
+          margin-top: -17px;
+          margin-left: -3px; }
+          .main-footer__info .info__links .info__link .card__desc .card__payments {
+            font-size: 14px; }
+        .main-footer__info .info__links .info__link .main-footer__email {
+          width: 193px;
+          color: #342b2b;
+          font-family: "Cormorant";
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 0.68px;
+          background-color: transparent;
+          padding: 0;
+          border: none;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #342b2b; }
+        .main-footer__info .info__links .info__link .card__types {
+          margin-left: -3px;
+          margin-top: 3px; }
+          .main-footer__info .info__links .info__link .card__types .card__type:nth-child(even) {
+            margin-right: 19px;
+            margin-left: 17px; }
+          .main-footer__info .info__links .info__link .card__types .card__type--visa {
+            width: 45px;
+            height: 45px;
+            background-image: url(/img/1440_main-footer_icon-visa.png); }
+          .main-footer__info .info__links .info__link .card__types .card__type--master {
+            width: 71px;
+            height: 45px;
+            background-image: url(/img/1440_main-footer_icon-master.png); }
+          .main-footer__info .info__links .info__link .card__types .card__type--pp {
+            width: 45px;
+            height: 45px;
+            background-image: url(/img/1440_main-footer_icon-pp.png); }
+        .main-footer__info .info__links .info__link--desktop {
+          display: list-item; }
+      .main-footer__info .info__ways {
+        width: 180px;
+        margin-right: 32px; }
+        .main-footer__info .info__ways .info__way {
+          margin-bottom: 35px;
+          font-size: 18px; }
+          .main-footer__info .info__ways .info__way--desktop {
+            display: list-item; }
+    .main-footer .copyrights {
+      margin-top: 49px;
+      padding-right: 127px; }
+      .main-footer .copyrights:before {
+        right: 278px; } }
