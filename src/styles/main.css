@@ -1177,7 +1177,7 @@ template {
 
 @media screen and (min-width: 1440px) {
   .about {
-    padding: 0 195px 170px 212px;
+    padding: 0 195px 160px 212px;
     position: relative; }
     .about .paginations {
       margin: 0;
@@ -1291,10 +1291,11 @@ template {
     .blog .slider .slide {
       width: 244px;
       display: none;
-      justify-content: center; }
+      justify-content: flex-start; }
       .blog .slider .slide--active {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        flex-wrap: wrap; }
       .blog .slider .slide__title {
         margin-top: 0;
         margin-bottom: 8px;
@@ -1317,7 +1318,8 @@ template {
         .blog .slider .slide__link .tags {
           text-align-last: left;
           list-style: none;
-          display: block;
+          display: flex;
+          flex-direction: row;
           padding: 0;
           margin: 0;
           margin-bottom: 12px; }
@@ -1364,6 +1366,47 @@ template {
           font-size: 16px; }
         .blog .slider .slide .tag {
           font-size: 16px; } }
+
+@media screen and (min-width: 1440px) {
+  .blog {
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 16px; }
+    .blog__title {
+      font-size: 48px;
+      margin-top: 5px;
+      margin-left: 0;
+      margin-bottom: 117px; }
+    .blog .slider {
+      margin-bottom: 87px; }
+      .blog .slider:first-of-type {
+        margin-left: -167px; }
+      .blog .slider .slide {
+        margin-right: 29px;
+        width: 401px;
+        min-height: 800px; }
+        .blog .slider .slide__title {
+          font-size: 30px;
+          margin-top: 12px;
+          text-align: left;
+          letter-spacing: -0.4px;
+          word-spacing: 2.4px;
+          margin-left: -2px;
+          margin-bottom: 11px; }
+        .blog .slider .slide__desc {
+          text-align: left;
+          font-size: 18px;
+          padding-left: 0;
+          letter-spacing: -0.4px;
+          word-spacing: 2.4px;
+          margin-left: -2px; }
+        .blog .slider .slide__link .tags {
+          margin-bottom: 9px; }
+          .blog .slider .slide__link .tags .tag {
+            font-size: 16px; }
+    .blog .link-to-blog {
+      font-size: 18px;
+      margin-left: -37px; } }
 
 .subscription {
   min-width: 320px;
