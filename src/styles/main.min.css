@@ -1070,6 +1070,76 @@ button:-moz-focusring,
           bottom: 70px;
           left: 0; } }
 
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 0 195px 0 212px;
+    position: relative; }
+    .about .paginations {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      height: 310px;
+      list-style: none;
+      right: 56px;
+      top: calc(33% - 8px); }
+      .about .paginations .pagination {
+        margin-bottom: 31px; }
+        .about .paginations .pagination:last-child {
+          margin-bottom: 0; }
+        .about .paginations .pagination--active {
+          margin-bottom: 129px;
+          position: relative; }
+          .about .paginations .pagination--active:after {
+            position: absolute;
+            content: "";
+            bottom: -105px;
+            left: 9px;
+            display: inline-block;
+            height: 94px;
+            width: 1px;
+            background-color: #342b2b; }
+          .about .paginations .pagination--active .pagination__link {
+            color: #91171d;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 600; }
+        .about .paginations .pagination__link {
+          color: #342b2b;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-weight: 400;
+          text-decoration: none; }
+    .about__title {
+      font-size: 48px;
+      margin-left: -15px;
+      margin-top: 33px;
+      margin-bottom: 20px;
+      letter-spacing: -0.8px;
+      margin-bottom: 106px; }
+    .about__photos {
+      height: 1112px; }
+      .about__photos .photo__img {
+        width: 500px;
+        height: unset; }
+      .about__photos .photo__desc {
+        font-size: 20px;
+        line-height: 24px; }
+        .about__photos .photo__desc .desc__content {
+          margin-bottom: 24px; }
+        .about__photos .photo__desc--left {
+          padding: 26px 41px 24px;
+          top: 68px;
+          width: 613px;
+          height: 243px; }
+        .about__photos .photo__desc--right {
+          padding: 62px 42px 38px;
+          left: 2px;
+          width: 611px;
+          height: 243px; } }
+
 .blog {
   min-width: 320px;
   padding: 0 15px;
