@@ -1,8 +1,27 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 picture {
     display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 290px;
+}
+@media screen and (min-width: 764px) {
+    .container {
+        width: 764px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
 }
 
 @import "norm.scss";

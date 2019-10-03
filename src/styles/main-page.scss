@@ -5,6 +5,7 @@
     box-sizing: border-box;
     background-image: url(/img/320_main-page_bg-1.jpg);
     background-repeat: no-repeat;
+    background-position: top right;
 
     .catalog {
         display: none;
@@ -65,6 +66,7 @@
     .main-header {
         display: inline-block;
         min-width: 257px;
+        width: calc(100% - 33px);
         height: 16px;
         padding-top: 9px;
         padding-bottom: 9px;
@@ -257,6 +259,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: calc(100% - 50px);
 
             .header__logo {
                 display: inline-block;
@@ -506,6 +509,8 @@ z-index: -1;
             padding-bottom: 25px;
             min-width: 1300px;
             box-sizing: border-box;
+            width: calc(100% - 75px);
+
             height: 80px;
             .header__logo {
                 width: 156px;

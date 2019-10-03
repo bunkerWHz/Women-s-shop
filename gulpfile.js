@@ -7,19 +7,36 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const server = require('browser-sync').create();
 sass.compiler = require('node-sass');
-const uncss = require('gulp-uncss');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 
 gulp.task('style', () => {
+const plugins = [
+        autoprefixer(),
+        cssnano(),
+require("stylelint")({ 
+ extends: ["stylelint-config-recommended"],
+  rules: {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
+  }
+ }),
+require("postcss-uncss")({
+ignore: [/\.*--active/,/\.*--liked/ ],
+html: "./src/index.html",
+css: "./src/*.css"
+
+})
+    ];
 
   return gulp.src('./src/styles/*.scss')
   .pipe(plumber())
   .pipe(sass.sync().on('error', sass.logError))
-.pipe(gulp.dest('./src/styles/'))
-  .pipe(rename({suffix: ".min"}))
-  .pipe(uncss({
-    html: ['index.html', './src/*.html']
-  }))
+.pipe(postcss(plugins))
+  .pipe(gulp.dest('./src/styles/'))
+  .pipe(rename({suffix: ".min",}))
   .pipe(gulp.dest('./src/styles/'))
   .pipe(server.stream());
 });
@@ -45,10 +62,9 @@ gulp.task('serve', () => {
     server: "./src/"
   });
   gulp.watch('./src/styles/**.*{scss, css}', gulp.parallel('style')).on('change', server.reload);
-  gulp.watch('./src/index.html').on('change', server.reload);
+  gulp.watch('./src/*.html').on('change', server.reload);
 
 });
-
 
 
 gulp.task('default', gulp.parallel('serve', 'style'));

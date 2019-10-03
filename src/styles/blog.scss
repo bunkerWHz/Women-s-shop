@@ -23,7 +23,9 @@ padding-bottom: 4px;
     margin-bottom: 6px;
     }
     .slider {
-        width: 290px;
+        margin: 0 auto;
+        width: 244px;
+        overflow: hidden;
         display: flex;
         flex-direction: row;
         justify-content: center;

@@ -334,5 +334,40 @@
         </div>
     </footer>
 
+    <script>
+    const slides = [...document.querySelectorAll(".new-models .slide")];
+    const sliderBtnLeft = document.querySelector(".new-models .slider__btn--left");
+    const sliderBtnRight = document.querySelector(".new-models .slider__btn--right");
+let current = slides.indexOf(document.querySelector(".new-models .slide--active"));
+const likeBtns = [...document.querySelectorAll('.slider .like-btn')];
+const likeBtn = document.querySelector('.slide--active .like-btn');
+
+likeBtns.forEach(btn =>{
+    btn.addEventListener('click', event => {
+       event.preventDefault(),
+       event.target.classList.toggle('like-btn--liked')
+       })
+    });
+
+
+   function nextSlide ()  {
+        slides[current].classList.toggle('slide--active');
+        current++;
+        current = current % slides.length;
+        slides[current].classList.toggle('slide--active');
+    }
+    function prevSlide () {
+        slides[current].classList.toggle('slide--active');
+        current--;
+        current === -1 ? current = slides.length -1 : 0;
+        slides[current].classList.toggle('slide--active');
+    }
+
+sliderBtnLeft.addEventListener('click', prevSlide);
+sliderBtnRight.addEventListener('click', nextSlide);
+    
+
+    </script>
+
 </body>
 </html>
