@@ -319,6 +319,8 @@
             justify-content: flex-end;
             position: relative;
             &__nav {
+                top: unset;
+                left: unset;
                 position: absolute;
                 display: flex;
                 width: 74px;
@@ -329,6 +331,7 @@
                 justify-content: space-between;
             }
             &__item {
+                display: unset;
                 color: #952126;
                 font-family: "Cormorant";
                 font-size: 24px;
