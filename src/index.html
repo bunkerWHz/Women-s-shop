@@ -63,7 +63,7 @@
                     <a href="#" class="link-to-catalog">Перейти в каталог</a>
             </div>
           <div class="slider">
-              <div class="slide">
+              <div class="slide slide--active">
                     <picture>
                         <source srcset="/img/1440_main-page_sl-1.jpg" media="(min-width:1440px)">
                         <source srcset="/img/764_main-page_sl-1.jpg" media="(min-width:764px)">
@@ -74,6 +74,28 @@
                           <span class="desc__price">9 900 рублей</span>
                       </div>
               </div>
+              <div class="slide">
+                <picture>
+                    <source srcset="/img/1440_main-page_sl-2.jpg" media="(min-width:1440px)">
+                    <source srcset="/img/764_main-page_sl-2.jpg" media="(min-width:764px)">
+                    <img src="/img/320_main-page_sl-2.jpg" alt="product image" class="slide__img">
+                  </picture>
+                  <div class="slide__desc">
+                      <p class="desc__name">Хлопковое платье в полоску</p>
+                      <span class="desc__price">9 900 рублей</span>
+                  </div>
+          </div>
+          <div class="slide">
+            <picture>
+                <source srcset="/img/1440_main-page_sl-3.jpg" media="(min-width:1440px)">
+                <source srcset="/img/764_main-page_sl-3.jpg" media="(min-width:764px)">
+                <img src="/img/320_main-page_sl-3.jpg" alt="product image" class="slide__img">
+              </picture>
+              <div class="slide__desc">
+                  <p class="desc__name">Хлопковое платье в полоску</p>
+                  <span class="desc__price">9 900 рублей</span>
+              </div>
+      </div>
               <div class="slider__nav">
                     <button class="slider__btn slider__btn--left"></button><span class="slider__item slider__item--current">01/</span><span class="slider__item slider__item--all">3</span><button class="slider__btn slider__btn--right"></button>
                 </div>
@@ -335,12 +357,9 @@
     </footer>
 
     <script>
-    const slides = [...document.querySelectorAll(".new-models .slide")];
-    const sliderBtnLeft = document.querySelector(".new-models .slider__btn--left");
-    const sliderBtnRight = document.querySelector(".new-models .slider__btn--right");
-let current = slides.indexOf(document.querySelector(".new-models .slide--active"));
-const likeBtns = [...document.querySelectorAll('.slider .like-btn')];
-const likeBtn = document.querySelector('.slide--active .like-btn');
+
+    const likeBtns = [...document.querySelectorAll('.slider .like-btn')];
+    const likeBtn = document.querySelector('.slide--active .like-btn');
 
 likeBtns.forEach(btn =>{
     btn.addEventListener('click', event => {
@@ -350,22 +369,30 @@ likeBtns.forEach(btn =>{
     });
 
 
-   function nextSlide ()  {
-        slides[current].classList.toggle('slide--active');
-        current++;
-        current = current % slides.length;
-        slides[current].classList.toggle('slide--active');
+class Slider {
+    constructor(selector) {
+        this.selector = selector;
+        this.slider = document.querySelector(this.selector);
+        this.slides =  [...this.slider.querySelectorAll(".slide")];
+        this.current = this.slides.indexOf(this.slider.querySelector(".slide--active"));
+        this.sliderBtnLeft = this.slider.querySelector(".slider__btn--left").addEventListener("click", this.prevSlide.bind(this));
+        this.sliderBtnRight = this.slider.querySelector(".slider__btn--right").addEventListener("click", this.nextSlide.bind(this));
     }
-    function prevSlide () {
-        slides[current].classList.toggle('slide--active');
-        current--;
-        current === -1 ? current = slides.length -1 : 0;
-        slides[current].classList.toggle('slide--active');
-    }
-
-sliderBtnLeft.addEventListener('click', prevSlide);
-sliderBtnRight.addEventListener('click', nextSlide);
-    
+    prevSlide() {
+        this.slides[this.current].classList.toggle('slide--active');
+        this.current--;
+        this.current === -1 ? this.current = this.slides.length -1 : 0;
+       this.slides[this.current].classList.toggle('slide--active');
+    };
+    nextSlide() {
+        this.slides[this.current].classList.toggle('slide--active');
+        this.current++;
+        this.current = this.current % this.slides.length;
+        this.slides[this.current].classList.toggle('slide--active');
+    };
+}
+const sliderNM = new Slider(".new-models .slider");
+const sliderMP = new Slider(".main-page .slider");
 
     </script>
 

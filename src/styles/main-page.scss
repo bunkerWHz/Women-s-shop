@@ -139,6 +139,7 @@
         margin-bottom: 15px;
     }
 
+
     .link-to-catalog {
         color: #79100b;
         font-family: "Cormorant";
@@ -168,12 +169,38 @@
         z-index: 0;
 
         &__nav {
+            width: 219px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 389px;
+            display: flex;
+            flex-direction: row;
+        }
+        &__item {
             display: none;
+        }
+        &__btn {
+            width: 110px;
+            height: 389px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            &--left {
+
+            }
+            &--right {
+
+            }
         }
 
         .slide {
+            display: none;
             &__desc {
                 display: none;
+            }
+            &--active {
+                display: flex;
             }
         }
     }
