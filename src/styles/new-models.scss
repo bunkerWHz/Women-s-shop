@@ -252,7 +252,11 @@ align-items: center;
                         background-image: url(/img/1440_like-btn.png);
                         top: 20px;
                         right: 20px;
+                    &--liked, &:hover {
+                        background-image: url(/img/1440_like-btn--liked.png);
                     }
+                    }
+
                 }
                 &__desc{
                     .desc__name {
