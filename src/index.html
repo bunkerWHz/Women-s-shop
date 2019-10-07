@@ -232,7 +232,7 @@
                               <p class="slide__desc">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
                               </a>
                     </article>
-                    <article class="slide slide--active">
+                    <article class="slide">
                             <a href="#" class="slide__link ">
                                 <ul class="tags">
                                     <li class="tag">#советы</li>
@@ -246,7 +246,7 @@
                               <p class="slide__desc">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
                               </a>
                     </article>
-                    <article class="slide slide--active">
+                    <article class="slide">
                             <a href="#" class="slide__link">
                                 <ul class="tags">
                                     <li class="tag">#новости</li>
@@ -261,7 +261,7 @@
                               <p class="slide__desc">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
                               </a>
                     </article>
-                    <article class="slide slide--active">
+                    <article class="slide">
                             <a href="#" class="slide__link">
                                 <ul class="tags">
                                     <li class="tag">#тенденции</li>
@@ -277,8 +277,10 @@
                               </a>
                     </article>
                     <div class="slider__nav">
-                        <span class="nav__item nav__item--current">01/</span><span class="nav__item nav__item--all">4</span>
-                        <span class="nav__progress"></span><span class="nav__total"></span>
+                        <label for="slider__progress" class="nav__progress">
+                            <span class="nav__item nav__item--current">01/</span><span class="nav__item nav__item--all">4</span>
+                        </label>
+                        <input type="range" name="slider__progress" step="1" value="1" min="1" max="4" class="nav__total"></input>
                     </div>
             </div>
         </div>
@@ -356,45 +358,7 @@
         </div>
     </footer>
 
-    <script>
-
-    const likeBtns = [...document.querySelectorAll('.slider .like-btn')];
-    const likeBtn = document.querySelector('.slide--active .like-btn');
-
-likeBtns.forEach(btn =>{
-    btn.addEventListener('click', event => {
-       event.preventDefault(),
-       event.target.classList.toggle('like-btn--liked')
-       })
-    });
-
-
-class Slider {
-    constructor(selector) {
-        this.selector = selector;
-        this.slider = document.querySelector(this.selector);
-        this.slides =  [...this.slider.querySelectorAll(".slide")];
-        this.current = this.slides.indexOf(this.slider.querySelector(".slide--active"));
-        this.sliderBtnLeft = this.slider.querySelector(".slider__btn--left").addEventListener("click", this.prevSlide.bind(this));
-        this.sliderBtnRight = this.slider.querySelector(".slider__btn--right").addEventListener("click", this.nextSlide.bind(this));
-    }
-    prevSlide() {
-        this.slides[this.current].classList.toggle('slide--active');
-        this.current--;
-        this.current === -1 ? this.current = this.slides.length -1 : 0;
-       this.slides[this.current].classList.toggle('slide--active');
-    };
-    nextSlide() {
-        this.slides[this.current].classList.toggle('slide--active');
-        this.current++;
-        this.current = this.current % this.slides.length;
-        this.slides[this.current].classList.toggle('slide--active');
-    };
-}
-const sliderNM = new Slider(".new-models .slider");
-const sliderMP = new Slider(".main-page .slider");
-
-    </script>
+    <script src="/scripts/main.js"></script>
 
 </body>
 </html>
